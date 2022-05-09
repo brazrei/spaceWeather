@@ -107,9 +107,12 @@
         var video = document.getElementById('videoElem');
         video.src = "https://sdo.gsfc.nasa.gov/assets/img/latest/mpeg/latest_1024_0171.mp4?t=" + new Date().getTime();
         video.play();
+        function setImage(){
+            document.getElementById("imgDRAD").src="https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png";
+        }
         function updateDRADImage() {
             document.getElementById("imgDRAD").src="";
-            document.getElementById("imgDRAD").src="https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png";
+            setTimeout(setImage,1000);
         }
         setInterval(updateDRADImage,60000);
     </script>
