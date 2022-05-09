@@ -17,14 +17,14 @@
         }
         #divDRAP {
             position: absolute;
-            top: 650px;
-            left: 510px;
+            top: 580px;
+            left: 480px;
         }
         
         #divKPI {
             top: 270px;
             position: absolute;
-            left: -20px;
+            left: -80px;
         }
         
         img{
@@ -32,6 +32,13 @@
             max-height: 100%;
         }
         
+        .h5Titles {
+            position: absolute;
+            top 650;
+            left: 90;
+            z-index : 5;
+                
+        }
         .responsive-iframe {
           position: absolute;
           top: -150px;
@@ -73,19 +80,19 @@
         </iframe>
     </div>
     <div id="divKPI" style="width:50%;transform: scale(0.8);transform-origin: 0% 0% 0px;">
-        <h5>Nowcast Kp Index</h5>
         <iframe class="responsive-iframe" src="https://isdc.gfz-potsdam.de/kp-index/" frameborder="0" style="left: -130px;top: 130px;clip: rect(335px,780px,690px,250px);">
 
         </iframe>
     </div>
 
     <div id="divDRAP" style="width:20%;transform: scale(1.3);transform-origin: 0% 0% 0px;">
-        <h5>Previsão D-RAD</h5>
         <a href="https://www.swpc.noaa.gov/products/d-region-absorption-predictions-d-rap" target="_blank">
             <img id = "imgDRAD" src="https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png">
         </a>    
     </div>
 
+    <h5 class = "h5Titles">Nowcast Kp Index</h5>
+    <h5 class = "h5Titles" style="left:">Previsão D-RAD</h5>
     <div id="divVideo" style="width: 55%;left: 1023px;top: 0px;height: 100%;position:absolute;background-color: black;padding-top: 30px;" >
        <video id="videoElem" width="1000" height="1000" controls loop autoplay muted preload="auto">
        
